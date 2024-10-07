@@ -10,7 +10,7 @@ body {
   
   .n {
     overflow: hidden;
-    background-color: orange; 
+    background-color: rgb(104, 34, 37); 
   }
   
   .n a {
@@ -39,14 +39,14 @@ body {
   }
   
   .n a:hover, .sn:hover .snb {
-    background-color: orange);
+    background-color: rgb(104, 34, 37);
   }
   
   .subnav-content {
     display: none;
     position: absolute;
     left: 0;
-    background-color: orange;
+    background-color: rgb(104, 34, 37);
     width: 100%;
     z-index: 1;
   }
