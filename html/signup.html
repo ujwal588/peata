@@ -32,40 +32,26 @@
                 <p id="signup-message"></p>
             </form>
             <div class="additional-options">
-                <p style="color: rgb(255, 94, 0);">Already have an account? <a href="login.html" class="login-link">Log in</a></p>
+                <p style="color: rgb(255, 94, 0);">Already have an account? <a href="login.html" class="login-link">Sign in</a></p>
             </div>
         </div>
     </div>
-    <script >document.getElementById("signup-form").addEventListener("submit", function(event) {
-        event.preventDefault();
-    
-        const name = document.getElementById("name").value.trim();
-        const email = document.getElementById("email").value.trim();
-        const password = document.getElementById("password").value.trim();
-        const signupMessage = document.getElementById("signup-message");
-    
-        signupMessage.textContent = "";
-    
-        if (name === "" || email === "" || password === "") {
-            signupMessage.textContent = "Please fill in all fields.";
-            signupMessage.style.color = "red";
-            return;
-        }
-    
-        const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-        if (!emailPattern.test(email)) {
-            signupMessage.textContent = "Please enter a valid email.";
-            signupMessage.style.color = "red";
-            return;
-        }
-    
-        signupMessage.textContent = "Signup successful! Redirecting to login...";
-        signupMessage.style.color = "green";
-    
-        setTimeout(() => {
-            window.location.href = "login.html";
-        }, 1000);
-    });
-    </script>
+    <script >
+document.getElementById("signup-form").addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    const name = document.getElementById("name").value.trim();
+    const email = document.getElementById("email").value.trim();
+    const password = document.getElementById("password").value.trim();
+    const signupMessage = document.getElementById("signup-message");
+    signupMessage.textContent = "";
+    localStorage.setItem(email, password);
+    signupMessage.textContent = "Signup successful! Redirecting to login...";
+    signupMessage.style.color = "green";
+    setTimeout(() => {
+        window.location.href = "login.html";
+    }, 1000);
+});
+</script>
 </body>
 </html>
