@@ -1,9 +1,9 @@
-
+/* Global Styles */
 body {
     font-family: 'Arial', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f8f8f8;
+    background-color: #f5f5f5;
     color: #333;
 }
 
@@ -11,12 +11,16 @@ body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
   }
-  
+  #nnnn{
+    display: flex;
+    flex-direction: row;
+  } 
   .n {
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
     background-color: rgb(104, 34, 37); 
   }
-  
   .n a {
     float: left;
     font-size: 16px;
@@ -46,7 +50,7 @@ body {
     background-color: rgb(104, 34, 37);
   }
   
-  .subnav-content {
+  .sc {
     display: none;
     position: absolute;
     left: 0;
@@ -55,18 +59,18 @@ body {
     z-index: 1;
   }
   
-  .subnav-content a {
+  .sc a {
     float: left;
     color: white;
     text-decoration: none;
   }
   
-  .subnav-content a:hover {
+  .sc a:hover {
     background-color: #eee;
     color: black;
   }
   
-  .sn:hover .subnav-content {
+  .sn:hover .sc {
     display: block;
   }
   #logo{
@@ -74,95 +78,56 @@ body {
     float: left;
   }
 
+section {
+    padding: 50px 20px;
+    text-align: center;
+}
 
-.search-bar {
-    display: flex;
-    justify-content: center;
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color:rgb(104, 34, 37) ;
+}
+#about h3{
+  color:rgb(104, 34, 37) ;
+}
+
+
+#about p {
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 800px;
+    margin: 0 auto 40px;
+}
+
+.mission, .vision, .team {
     margin-bottom: 40px;
 }
 
-.search-bar input[type="text"] {
-    width: 300px;
-    padding: 10px;
-    border-radius: 5px;
-    border: 1px solid #ddd;
-    font-size: 16px;
+h3 {
+    font-size: 28px;
+    color: #444;
+    margin-bottom: 15px;
 }
 
-.search-bar button {
-    padding: 10px 20px;
-    margin-left: 10px;
-    background-color: #333;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.search-bar button:hover {
-    background-color: #555;
-}
-
-
-.product-grid {
+.tms {
     display: flex;
     justify-content: space-around;
     flex-wrap: wrap;
 }
 
-.product-card {
-    background-color: white;
-    border: 1px solid #ddd;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 220px;
+.tm {
     text-align: center;
     margin: 20px;
-    transition: transform 0.3s ease;
+    width: 200px;
 }
 
-.product-card:hover {
-    transform: translateY(-10px);
-}
-
-.product-image {
+.tp{
     width: 100%;
-    height: 180px;
+    height: 200px;
     object-fit: cover;
-    border-radius: 10px;
+    border-radius: 50%;
     margin-bottom: 15px;
-}
-
-.product-card h3 {
-    font-size: 20px;
-    margin-bottom: 10px;
-}
-
-.product-card p {
-    font-size: 16px;
-    color: #666;
-}
-
-.price {
-    font-size: 18px;
-    color: #333;
-    font-weight: bold;
-    margin-bottom: 15px;
-}
-
-.cart-btn {
-    background-color: #333;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    width: 100%;
-}
-
-.cart-btn:hover {
-    background-color: #555;
 }
 
 footer {

@@ -1,4 +1,4 @@
-/* General Reset */
+
 * {
     margin: 0;
     padding: 0;
@@ -12,7 +12,7 @@ body {
     line-height: 1.6;
 }
 
-/* Header */
+
 body {
     font-family: Arial, Helvetica, sans-serif;
     margin: 0;
@@ -52,7 +52,7 @@ body {
     background-color: rgb(104, 34, 37);
   }
   
-  .subnav-content {
+  .sc {
     display: none;
     position: absolute;
     left: 0;
@@ -61,18 +61,27 @@ body {
     z-index: 1;
   }
   
-  .subnav-content a {
+  .sc a {
     float: left;
     color: white;
     text-decoration: none;
   }
-  
-  .subnav-content a:hover {
+  .n {
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(104, 34, 37); 
+  }
+  #nnnn{
+    display: flex;
+    flex-direction: row;
+  }
+  .sc a:hover {
     background-color: #eee;
     color: black;
   }
   
-  .sn:hover .subnav-content {
+  .sn:hover .sc {
     display: block;
   }
   #logo{
@@ -80,9 +89,8 @@ body {
     float: left;
   }
 
-/* Hero Section */
 .hero {
-    background-image: url(./heall.jpg);
+    background-image: url(../images/heall.jpg);
     background-size: cover;
     background-position: center;
     padding: 100px 20px;
@@ -116,7 +124,7 @@ body {
     background-color: #333;
 }
 
-/* Healthcare Services */
+
 .healthcare-services {
     padding: 50px 20px;
     background-color: #fff;

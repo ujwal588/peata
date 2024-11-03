@@ -7,6 +7,8 @@ body {
   
   .n {
     overflow: hidden;
+    display: flex;
+    justify-content: space-between;
     background-color: rgb(104, 34, 37); 
   }
   
@@ -38,8 +40,11 @@ body {
   .n a:hover, .sn:hover .snb {
     background-color: rgb(104, 34, 37);
   }
-  
-  .subnav-content {
+  #nnnn{
+    display: flex;
+    flex-direction: row;
+  }
+  .sc {
     display: none;
     position: absolute;
     left: 0;
@@ -48,18 +53,18 @@ body {
     z-index: 1;
   }
   
-  .subnav-content a {
+  .sc a {
     float: left;
     color: white;
     text-decoration: none;
   }
   
-  .subnav-content a:hover {
+  .sc a:hover {
     background-color: #eee;
     color: black;
   }
   
-  .sn:hover .subnav-content {
+  .sn:hover .sc {
     display: block;
   }
   #logo{
@@ -67,7 +72,7 @@ body {
     float: left;
   }
 
-  .contact-section {
+  .cs {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
@@ -119,13 +124,13 @@ p {
     text-decoration: none;
 }
 
-.contact-form {
+#contact-form {
     max-width: 600px;
     margin: 0 auto;
 }
 
-.contact-form input,
-.contact-form textarea {
+#contact-form input,
+#contact-form textarea {
     width: 100%;
     padding: 15px;
     margin-bottom: 20px;
@@ -133,7 +138,7 @@ p {
     border-radius: 5px;
 }
 
-.contact-form button {
+#contact-form button {
     padding: 15px 30px;
     border: none;
     background-color: rgb(104, 34, 37);
@@ -144,12 +149,12 @@ p {
     margin-bottom: 40px;
 }
 
-.contact-form button:hover {
+#contact-form button:hover {
     background-color: rgb(77, 18, 21);
 }
 #pop{
   height: 1000px;
-  background-image: url(./dog.jpg);
+  background-image: url(../images/dog.jpg);
   background-size: cover;
 }
 footer {
@@ -162,4 +167,13 @@ footer {
 }
 #olo{
   color: white;
+}
+#slogan{
+  color: rgb(77, 18, 21);
+  font-size: 40px;
+  font-family:'Times New Roman', Times, serif;
+  padding: 30px;
+  width: 70%;
+  padding-top: 70px;
+  padding-left: 50px;
 }

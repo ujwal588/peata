@@ -1,0 +1,130 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(135deg, #7d0420, #ffbe88); 
+}
+
+
+.login-wrapper, .signup-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+
+.login-container, .signup-container {
+    background-color: rgb(104, 34, 37);
+    padding: 30px 40px;
+    border-radius: 10px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+    width: 100%;
+    max-width: 400px;
+    text-align: center;
+}
+
+
+.logo img {
+    width: 80px;
+    margin-bottom: 20px;
+}
+
+
+h2 {
+    color: #ffffff;
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.welcome-text {
+    color: #dddddd;
+    font-size: 14px;
+    margin-bottom: 20px;
+}
+
+
+.input-group {
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.input-group label {
+    font-size: 14px;
+    color: #dddddd;
+    display: block;
+    margin-bottom: 5px;
+}
+
+.input-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}
+
+.input-group input:focus {
+    border-color: #6f1e2e;
+    outline: none;
+}
+
+
+.login-btn, .signup-btn {
+    width: 100%;
+    padding: 10px;
+    background: linear-gradient(135deg, #6f1e2e, #a24549); 
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.login-btn:hover, .signup-btn:hover {
+    background: linear-gradient(135deg, #5c1926, #8c3b40); 
+}
+
+
+.additional-options {
+    margin-top: 20px;
+}
+
+.forgot-password, .signup-link, .login-link {
+    color: #d73c3c;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.forgot-password:hover, .signup-link:hover, .login-link:hover {
+    text-decoration: underline;
+}
+
+
+#login-message, #signup-message {
+    margin-top: 15px;
+    font-size: 14px;
+}
+.back-arrow {
+    font-size: 24px;
+    color: #cc8522;
+    text-decoration: none;
+    transition: color 0.3s;
+    float: left;
+}
+
+.back-arrow:hover {
+    color: #ffffff;
+}
